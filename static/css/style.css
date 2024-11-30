@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif; /* 设置页面整体的字体为 Arial，若 Arial 不可用则使用 sans-serif */
+    display: flex; /* 将页面内容设置为 flex 布局 */
+    flex-direction: column; /* 设置主轴方向为纵向（从上到下） */
+    align-items: center; /* 将子元素水平居中对齐 */
+    padding: 20px; /* 为页面内容设置 20px 的内边距 */
+}
+
+h1 {
+    margin-bottom: 20px; /* 设置标题与下方内容的间距为 20px */
+}
+
+.control-panel {
+    margin-bottom: 20px; /* 设置控制面板与下方内容的间距为 20px */
+}
+
+.crossroads {
+    display: flex; /* 将交叉路口设置为 flex 布局 */
+    justify-content: space-around; /* 将路口均匀分布，子元素之间留有空间 */
+    width: 100%; /* 设置路口区域宽度为 100%（占满父容器） */
+}
+
+.crossroad {
+    display: flex; /* 设置路口为 flex 布局 */
+    flex-direction: column; /* 将内部元素排列为纵向（从上到下） */
+    align-items: center; /* 将内部元素水平居中 */
+    padding: 10px; /* 为路口容器内部设置 10px 的内边距 */
+    border: 1px solid #ccc; /* 为路口容器设置浅灰色的边框，宽度为 1px */
+    border-radius: 10px; /* 将路口容器的边框设置为圆角，半径为 10px */
+    width: 150px; /* 设置路口容器的宽度为 150px */
+}
+
+.light {
+    width: 50px; /* 设置红绿灯的宽度为 50px */
+    height: 50px; /* 设置红绿灯的高度为 50px */
+    margin: 10px; /* 设置红绿灯与其他元素的上下左右间距为 10px */
+    border-radius: 50%; /* 将红绿灯设置为圆形（通过设置圆角为宽高的 50% 实现） */
+}
+
+#history-panel {
+    position: fixed; /* 将历史记录面板固定在窗口中 */
+    right: 10px; /* 设置历史记录面板距离窗口右边的距离为 10px */
+    bottom: 10px; /* 设置历史记录面板距离窗口底部的距离为 10px */
+    width: 400px; /* 设置历史记录面板的宽度为 400px */
+    background-color: rgba(63, 180, 214, 0.16); /* 设置背景颜色为淡蓝色，透明度为 16% */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 设置面板阴影效果，模糊度为 10px，颜色为浅黑色 */
+    border: 1px solid rgba(27, 91, 163, 0.84); /* 设置边框颜色为深蓝色，透明度为 84% */
+    padding: 10px; /* 为历史记录面板内容设置 10px 的内边距 */
+}
+
+#history-container {
+    height: 80px; /* 设置历史记录内容区域的高度为 80px */
+    overflow-y: scroll; /* 为内容区域添加垂直滚动条 */
+    padding: 0 10px; /* 为内容区域设置左右 10px 的内边距，上下内边距为 0 */
+    margin-top: 8px; /* 设置内容区域与上方标题的间距为 8px */
+}
+
+#history-panel h2 {
+    margin: 0; /* 去掉标题的默认外边距 */
+    background-color: rgba(255, 255, 255, 0); /* 将标题背景颜色设置为完全透明 */
+    position: sticky; /* 将标题固定在内容区域顶部 */
+    top: 0; /* 标题固定在容器顶部 */
+    z-index: 10; /* 设置标题的堆叠顺序，确保位于其他内容上方 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0); /* 设置标题的下边框颜色为透明 */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* 设置标题字体为 Comic Sans MS 或其替代字体 */
+}
+
+#history-container ul {
+    padding: 5px; /* 设置列表内部的内边距为 5px */
+    margin: 0; /* 去掉列表的默认外边距 */
+}
+
+.red { background-color: red; } /* 设置红灯的背景颜色为红色 */
+.yellow { background-color: yellow; } /* 设置黄灯的背景颜色为黄色 */
+.green { background-color: green; } /* 设置绿灯的背景颜色为绿色 */
